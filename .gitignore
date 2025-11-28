@@ -1,0 +1,16 @@
+venv
+.idea
+migrations/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Database files
+db.sqlite3
+*.db
+*.sqlite
+*.sqlite3
