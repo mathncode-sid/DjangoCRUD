@@ -3,7 +3,10 @@ from Admin.models import Product
 
 # Create your views here.
 def admin(request):
-    return render(request, 'admin.html')
+    products = Product.objects.all()
+    return render(request, 'admin.html', {'products':products})
+
+
 
 def add_item(request):
     if request.method == 'POST':

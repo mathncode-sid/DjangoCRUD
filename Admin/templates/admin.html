@@ -54,16 +54,19 @@
                             </tr>
                         </thead>
                         <tbody>
+                            {% for product in products%}
                             <tr>
-                                <td>1</td>
-                                <td>Samsung A12</td>
-                                <td>23000</td>
-                                <td>Infinity-V display</td>
+                                <td>{{ forloop.counter }}</td>
+                                <td>{{ product.name }}</td>
+                                <td>{{ product.price}}</td>
+                                <td>{{ product.description }}</td>
                                 <td>
                                     <a href="#" class="btn btn-sm btn-primary">Edit</a>
                                     <a href="#" class="btn btn-sm btn-danger">Delete</a>
                                 </td>
+
                             </tr>
+                            {% endfor %}
 
                         </tbody>
                     </table>
